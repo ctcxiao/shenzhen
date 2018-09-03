@@ -1,8 +1,8 @@
 'use strict';
 
+const sum = (a,b)=>a+b;
 function amount_even(collection) {
-
-  //在这里写入代码
+  return collection.filter(value => value%2===0).reduce(sum);
 }
 
 module.exports = amount_even;
