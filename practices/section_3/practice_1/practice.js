@@ -1,5 +1,14 @@
 function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
+  collection_a.forEach(value => {
+    console.log(value.key + ":" + value.count);
+    object_b.value.forEach(element => {
+        if (element.includes(value.key)) {
+          value.count--;
+        }
+      }
+    );
+  });
+  return collection_a;
 }
 
 module.exports = create_updated_collection;

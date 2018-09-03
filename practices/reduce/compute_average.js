@@ -1,9 +1,9 @@
 'use strict';
 
-const average = (a,b)=>(a+b);
+const sum = (a,b)=>(a+b);
 
 function compute_average(collection) {
-  return collection.reduce(average)/collection.length;
+  return collection.reduce(sum)/collection.length;
 }
 
 module.exports = compute_average;
