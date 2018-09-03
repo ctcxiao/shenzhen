@@ -21,9 +21,6 @@ function choose_divisible_integer(collection_a, collection_b) {
 
     isExist = false;
   });
-
-
-
   return result;
 }
 
